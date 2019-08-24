@@ -17,7 +17,6 @@ class TimePipeline():
             item['crawled_at'] = now
         return item
 
-
 class WeiboPipeline():
     def parse_time(self, date):
         if re.match('刚刚', date):
